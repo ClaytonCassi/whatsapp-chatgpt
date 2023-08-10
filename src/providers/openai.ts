@@ -21,7 +21,7 @@ export function initOpenAI() {
 		top_p: 0.9, // OpenAI parameter
 		frequency_penalty: 0, // OpenAI parameter
 		presence_penalty: 0, // OpenAI parameter
-		// instructions: ``,
+		 instructions: process.env.PRE_PROMPT,
 		model: config.openAIModel // OpenAI model
 	});
 
